@@ -27,6 +27,19 @@
         </action>
     </package>
 
+    <package name="search" namespace="/" extends="struts-default">
+        <action name="search">
+            <result>/search.jsp</result>
+        </action>
+    </package>
+
+    <package name="searchForm" namespace="/" extends="struts-default">
+        <action name="searchForm" class="org.apache.action.SearchAction">
+            <result name="input">/search.jsp</result>
+            <result name="success">/searchResult.jsp</result>
+        </action>
+    </package>
+
     <package name="default" namespace="/tutorials" extends="struts-default">
 
         <interceptors>
