@@ -5,8 +5,8 @@ public class TutorialAction {
     private String language;
 
     public String execute(){
-        LangFinderService service = new LangFinderService();
-        language = service.getBestLang(this.getLanguage());
+//        LangFinderService service = new LangFinderService();
+//        language = service.getBestLang(this.getLanguage());
         return "success";
     }
 

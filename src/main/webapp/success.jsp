@@ -9,9 +9,9 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
-    <title>This is a success page!!!</title>
+    <title>Success page!!!</title>
 </head>
 <body>
-<h1>Hello <s:property value="userID"/></h1>
+<h1>Hello this is a RESTRICTED success page!!!</h1>
 </body>
 </html>

@@ -4,9 +4,9 @@ public class LangFinderService {
 
     public String getBestLang(String language){
         if (language.equals("java")){
-            return "dang bro you chose java?!?";
+            return "nice you chose java?!?";
         } else {
-            return "okay cool";
+            return "okay cool language";
         }
     }
 

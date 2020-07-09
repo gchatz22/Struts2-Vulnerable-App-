@@ -1,10 +1,22 @@
 package org.apache.action;
 
-public class LoginAction {
+import com.opensymphony.xwork2.ActionSupport;
+import org.apache.commons.lang3.StringUtils;
+
+public class LoginAction extends ActionSupport {
 
     private String userID;
     private String password;
 
+    public void validate(){
+        if (StringUtils.isEmpty(this.getUserID())){
+            addFieldError("userID", "User ID cannot be blank!");
+        }
+
+        if (StringUtils.isEmpty(this.getPassword())){
+            addFieldError("password", "Password cannot be blank!");
+        }
+    }
 
     public String execute(){
         if (this.getUserID().equals("user") && this.getPassword().equals("pass")) {
