@@ -1,23 +1,22 @@
 package org.apache.action;
 
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
-import com.opensymphony.xwork2.config.entities.ActionConfig;
 import com.opensymphony.xwork2.interceptor.Interceptor;
+import com.opensymphony.xwork2.interceptor.PreResultListener;
 import org.apache.struts2.ServletActionContext;
-import javax.servlet.http.HttpServletRequest;
-import java.util.Enumeration;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.jsp.tagext.BodyTagSupport;
 
-public class LoginInterceptor implements Interceptor {
+public class LoginInterceptor extends BodyTagSupport implements Interceptor, PreResultListener {
 
-    private String some;
+    private String[] some;
 
-    public String getSome(){
+    public String[] getSome(){
         return this.some;
     }
 
-    public void setSome(String hey){
-        this.some = hey;
+    public void setSome(String[] param){
+        this.some = param;
     }
 
     @Override
@@ -31,27 +30,18 @@ public class LoginInterceptor implements Interceptor {
     }
 
     @Override
+    public void beforeResult(ActionInvocation invocation, String resultCode) {
+        HttpServletResponse response = (HttpServletResponse) invocation.getInvocationContext().get(ServletActionContext.HTTP_RESPONSE);
+        System.out.println(getBodyContent());
+        System.out.println("hey");
+
+    }
+
+    @Override
     public String intercept(ActionInvocation invocation) throws Exception {
-        ActionContext context = invocation.getInvocationContext();
-        HttpServletRequest request = (HttpServletRequest) context.get(ServletActionContext.HTTP_REQUEST);
 
-        ActionConfig test = invocation.getProxy().getConfig();
-        System.out.println(test.getParams());
-//        Enumeration en = request.getHeaderNames();
-//
-//        while (en.hasMoreElements() == true){
-//            String header = (String) en.nextElement();
-//            System.out.println(header);
-//            System.out.println(request.getHeader(header));
-//            System.out.println("\n");
-//        }
-//
-//        System.out.println(context.getParameters());
-//        System.out.println(request.getContextPath());
-//        System.out.println(some);
+        invocation.addPreResultListener(this);
 
-        String resp = invocation.invoke();
-//        System.out.println(resp.getClass());
-        return resp;
+        return invocation.invoke();
     }
 }

@@ -27,6 +27,26 @@
         </action>
     </package>
 
+    <package name="search" namespace="/" extends="struts-default">
+        <action name="search">
+            <result>/search.jsp</result>
+        </action>
+    </package>
+
+    <package name="searchForm" namespace="/" extends="struts-default">
+        <action name="searchForm" class="org.apache.action.SearchAction">
+            <result name="input">/search.jsp</result>
+            <result name="success">/searchResult.jsp</result>
+        </action>
+    </package>
+
+    <package name="csp-reports" namespace="/" extends="struts-default">
+        <action name="csp-reports" class="org.apache.action.CspReportAction">
+<!--            <result name="input">/search.jsp</result>-->
+            <result name="success">/searchResult.jsp</result>
+        </action>
+    </package>
+
     <package name="default" namespace="/tutorials" extends="struts-default">
 
         <interceptors>
@@ -35,11 +55,12 @@
 
 <!--        class="org.apache.action.TutorialAction"-->
         <action name="getTutorial">
-            <interceptor-ref name="login-int">
-                <param name="some">"Hello"</param>
-            </interceptor-ref>
             <result name="success">/success.jsp</result>
             <result name="failure">/error.jsp</result>
+
+            <interceptor-ref name="login-int">
+                <param name="some">var1,var2,var3</param>
+            </interceptor-ref>
         </action>
     </package>
 

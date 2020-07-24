@@ -1,4 +1,6 @@
+org/apache/action/LoginAction.class
+org/apache/action/CspReportAction.class
 org/apache/action/LangFinderService.class
 org/apache/action/TutorialAction.class
 org/apache/action/LoginInterceptor.class
-org/apache/action/LoginAction.class
+org/apache/action/SearchAction.class

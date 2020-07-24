@@ -6,6 +6,7 @@
     <title>Basic Struts 2 Application - Welcome</title>
 </head>
 <body>
-<h1>Welcome To Struts 2!</h1>
+<h1>Welcome To Struts 2! My name is Giannis</h1>
+<h2>Hey there you</h2>
 </body>
 </html>

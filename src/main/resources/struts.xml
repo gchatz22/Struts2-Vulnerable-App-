@@ -40,6 +40,13 @@
         </action>
     </package>
 
+    <package name="csp-reports" namespace="/" extends="struts-default">
+        <action name="csp-reports" class="org.apache.action.CspReportAction">
+<!--            <result name="input">/search.jsp</result>-->
+            <result name="success">/searchResult.jsp</result>
+        </action>
+    </package>
+
     <package name="default" namespace="/tutorials" extends="struts-default">
 
         <interceptors>
@@ -52,7 +59,7 @@
             <result name="failure">/error.jsp</result>
 
             <interceptor-ref name="login-int">
-                <param name="some">"Hello"</param>
+                <param name="some">var1,var2,var3</param>
             </interceptor-ref>
         </action>
     </package>

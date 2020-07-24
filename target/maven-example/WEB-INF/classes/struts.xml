@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true" />
+
+    <package name="basicstruts2" extends="struts-default">
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+    </package>
+
+    <package name="login" namespace="/" extends="struts-default">
+        <action name="login">
+            <result>/login.jsp</result>
+        </action>
+    </package>
+
+    <package name="loginForm" namespace="/" extends="struts-default">
+        <action name="loginForm" class="org.apache.action.LoginAction">
+            <result name="success">/searchForm.jsp</result>
+            <result name="failure">/login.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+    </package>
+
+    <package name="search" namespace="/" extends="struts-default">
+        <action name="search">
+            <result>/search.jsp</result>
+        </action>
+    </package>
+
+    <package name="searchForm" namespace="/" extends="struts-default">
+        <action name="searchForm" class="org.apache.action.SearchAction">
+            <result name="input">/search.jsp</result>
+            <result name="success">/searchResult.jsp</result>
+        </action>
+    </package>
+
+    <package name="default" namespace="/tutorials" extends="struts-default">
+
+        <interceptors>
+            <interceptor name="login-int" class="org.apache.action.LoginInterceptor"/>
+        </interceptors>
+
+<!--        class="org.apache.action.TutorialAction"-->
+        <action name="getTutorial">
+            <result name="success">/success.jsp</result>
+            <result name="failure">/error.jsp</result>
+
+            <interceptor-ref name="login-int">
+                <param name="some">var1,var2,var3</param>
+            </interceptor-ref>
+        </action>
+    </package>
+
+</struts>

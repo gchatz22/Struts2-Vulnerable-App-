@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>Search Form XSS</title>
+    <s:link rel="www.google.com"/>
 </head>
 <body>
 
@@ -11,6 +12,7 @@
     <s:submit/>
 </s:form>
 
+<s:script>console.log("hello");</s:script>
 
 </body>
 </html>
