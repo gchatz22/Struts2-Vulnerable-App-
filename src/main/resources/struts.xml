@@ -41,9 +41,10 @@
     </package>
 
     <package name="csp-reports" namespace="/" extends="struts-default">
-        <action name="csp-reports" class="org.apache.action.CspReportAction">
-<!--            <result name="input">/search.jsp</result>-->
-            <result name="success">/searchResult.jsp</result>
+        <action name="csp-reports" class="org.apache.struts2.action.DefaultCspReportAction">
+            <result name="success" type="httpheader">
+                <param name="statusCode">200</param>
+            </result>
         </action>
     </package>
 
@@ -61,6 +62,18 @@
             <interceptor-ref name="login-int">
                 <param name="some">var1,var2,var3</param>
             </interceptor-ref>
+        </action>
+    </package>
+
+    <package name="doubleselect" namespace="/" extends="struts-default">
+
+        <action name="doubleSelectAction"
+                class="org.apache.action.DoubleSelectAction" method="display">
+            <result name="none">doubleselect.jsp</result>
+        </action>
+
+        <action name="resultAction" class="org.apache.action.DoubleSelectAction">
+            <result name="success">dsResult.jsp</result>
         </action>
     </package>
 

@@ -19,6 +19,8 @@
 package org.apache.action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.action.ServletRequestAware;
 
@@ -26,15 +28,13 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class CspReportAction extends ActionSupport implements ServletRequestAware {
+public class DRAFTCspReportAction extends ActionSupport implements ServletRequestAware {
 
-    HttpServletRequest request;
+
+    private static final Logger LOG = LogManager.getLogger(DRAFTCspReportAction.class);
+    private HttpServletRequest request;
 
     public String execute() throws IOException {
-//        System.out.println("I am here!");
-//        BufferedReader reader = request.getReader();
-//        System.out.println(reader.readLine());
-
         return "success";
     }
 
@@ -52,7 +52,8 @@ public class CspReportAction extends ActionSupport implements ServletRequestAwar
         BufferedReader reader = null;
         try {
             reader = request.getReader();
-            System.out.println(reader.readLine());
+            System.out.println("before logging");
+            LOG.error(reader.readLine().getClass());
         } catch (IOException e) {
             e.printStackTrace();
         }

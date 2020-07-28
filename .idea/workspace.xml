@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c20a2d9-2bfb-419e-92ff-22264a38696e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/action/DoubleSelectAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/doubleselect.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/dsResult.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/action/CspReportAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/action/CspReportAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/action/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/action/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/action/CspReportAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/action/DRAFTCspReportAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/action/LangFinderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/action/LangFinderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/action/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/apache/action/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/apache/action/CspReportAction.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-examle.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-examle/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-examle/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-example.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-example.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-example/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-example/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-example/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-example/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +39,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -63,7 +50,6 @@
   </component>
   <component name="ProjectId" id="1e5f2JhB8pKuF9HSuDXIjM1EHD2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -105,11 +91,6 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Build.go build mavenexample/" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -127,14 +108,6 @@
       <workItem from="1593774831485" duration="11612000" />
       <workItem from="1593962107588" duration="24117000" />
       <workItem from="1594129880765" duration="12739000" />
-      <workItem from="1594282957375" duration="441000" />
-      <workItem from="1594284509811" duration="2699000" />
-      <workItem from="1594389328184" duration="7283000" />
-      <workItem from="1594728943380" duration="5172000" />
-      <workItem from="1594817435336" duration="690000" />
-      <workItem from="1594904826665" duration="4137000" />
-      <workItem from="1594993849272" duration="7217000" />
-      <workItem from="1595508944622" duration="6139000" />
     </task>
     <servers />
   </component>
@@ -158,29 +131,24 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="660" y="171" width="376" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1595586881381">
-      <screen x="0" y="0" width="1704" height="918" />
+    <state x="577" y="191" width="589" height="480" key="find.popup" timestamp="1595857899102">
+      <screen x="0" y="0" width="1744" height="862" />
     </state>
-    <state x="660" y="171" width="376" height="583" key="#com.intellij.ide.util.MemberChooser/0.0.1704.918@0.0.1704.918" timestamp="1595586881381" />
-    <state x="551" y="95" width="594" height="735" key="#go_build_mavenexample/" timestamp="1594993894372">
-      <screen x="0" y="0" width="1704" height="918" />
+    <state x="577" y="191" width="589" height="480" key="find.popup/0.0.1744.862@0.0.1744.862" timestamp="1595857899102" />
+    <state x="535" y="183" width="672" height="678" key="search.everywhere.popup" timestamp="1595932264594">
+      <screen x="0" y="0" width="1744" height="862" />
     </state>
-    <state x="551" y="95" width="594" height="735" key="#go_build_mavenexample//0.0.1704.918@0.0.1704.918" timestamp="1594993894372" />
-    <state x="635" y="217" width="426" height="490" key="FileChooserDialogImpl" timestamp="1594993986439">
-      <screen x="0" y="0" width="1704" height="918" />
-    </state>
-    <state x="635" y="217" width="426" height="490" key="FileChooserDialogImpl/0.0.1704.918@0.0.1704.918" timestamp="1594993986439" />
-    <state x="385" y="117" width="926" height="690" key="Maven.ArtifactSearchDialog" timestamp="1594980476573">
-      <screen x="0" y="0" width="1704" height="918" />
-    </state>
-    <state x="385" y="117" width="926" height="690" key="Maven.ArtifactSearchDialog/0.0.1704.918@0.0.1704.918" timestamp="1594980476573" />
-    <state x="638" y="379" width="419" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594988203242">
-      <screen x="0" y="0" width="1704" height="918" />
-    </state>
-    <state x="638" y="379" width="419" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1704.918@0.0.1704.918" timestamp="1594988203242" />
-    <state x="515" y="198" width="672" height="678" key="search.everywhere.popup" timestamp="1595586914090">
-      <screen x="0" y="0" width="1704" height="918" />
-    </state>
-    <state x="515" y="198" width="672" height="678" key="search.everywhere.popup/0.0.1704.918@0.0.1704.918" timestamp="1595586914090" />
+    <state x="535" y="183" width="672" height="678" key="search.everywhere.popup/0.0.1744.862@0.0.1744.862" timestamp="1595932264594" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/apache/action/LoginInterceptor.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

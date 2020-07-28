@@ -1,6 +1,7 @@
-/usr/local/google/home/giannisc/Desktop/Struts2-Vulnerable-App-/src/main/java/org/apache/action/LoginInterceptor.java
-/usr/local/google/home/giannisc/Desktop/Struts2-Vulnerable-App-/src/main/java/org/apache/action/CspReportAction.java
-/usr/local/google/home/giannisc/Desktop/Struts2-Vulnerable-App-/src/main/java/org/apache/action/TutorialAction.java
-/usr/local/google/home/giannisc/Desktop/Struts2-Vulnerable-App-/src/main/java/org/apache/action/LangFinderService.java
-/usr/local/google/home/giannisc/Desktop/Struts2-Vulnerable-App-/src/main/java/org/apache/action/SearchAction.java
-/usr/local/google/home/giannisc/Desktop/Struts2-Vulnerable-App-/src/main/java/org/apache/action/LoginAction.java
+/usr/local/google/home/ecenazo/Struts2-Vulnerable-App-/src/main/java/org/apache/action/LoginAction.java
+/usr/local/google/home/ecenazo/Struts2-Vulnerable-App-/src/main/java/org/apache/action/DRAFTCspReportAction.java
+/usr/local/google/home/ecenazo/Struts2-Vulnerable-App-/src/main/java/org/apache/action/LoginInterceptor.java
+/usr/local/google/home/ecenazo/Struts2-Vulnerable-App-/src/main/java/org/apache/action/LangFinderService.java
+/usr/local/google/home/ecenazo/Struts2-Vulnerable-App-/src/main/java/org/apache/action/TutorialAction.java
+/usr/local/google/home/ecenazo/Struts2-Vulnerable-App-/src/main/java/org/apache/action/SearchAction.java
+/usr/local/google/home/ecenazo/Struts2-Vulnerable-App-/src/main/java/org/apache/action/DoubleSelectAction.java
